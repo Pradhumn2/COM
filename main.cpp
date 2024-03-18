@@ -4,6 +4,12 @@
 #include <iostream>
 #include "Factory.h"
 
+//.h and .lib are both needed to compile this file.
+//.h is the declaration of the class which when invluded in any cpp is an 
+// assurance to the cpp that such a method(interface) exists, which you can make a claa to it.
+// .h is knowing there is ticket counter in the raliway station
+//.lib is an assurance that there is a person to serve you at the counter.
+
 int main()
 {
     iMobile* iMobPtr = Factory::get_instance_iMobile();
